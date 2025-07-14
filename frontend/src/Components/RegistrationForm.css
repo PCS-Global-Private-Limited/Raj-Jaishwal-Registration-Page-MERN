@@ -1,15 +1,23 @@
 .form-container {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(12px);
+
     max-width: 400px;
-    margin: 5rem auto;
-    padding: 20px;
+    margin: 5rem auto ;
+    margin-left: 27rem;
+    padding: 2rem;
+    padding-left: 8rem;
+    padding-right: 15rem;
     border-radius: 10px;
     border: 1px solid #ccc;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f9f9f9;
+    overflow: hidden;
 }
 
 h2 {
     text-align: center;
+    margin-left: 8rem;
     color: #000;
 }
 
@@ -25,10 +33,14 @@ h2 {
 .input {
     width: 100%;
     padding: 10px;
-    margin-left: -10px;
+    padding-left: 2rem;
+    padding-right: 12rem;
+    margin-left: -50px;
+    margin-right: -50px;
     font-size: 15px;
     border: 1px solid #aaa;
     border-radius: 5px;
+    background: rgba(255, 255, 255, 0.556) !important;
 }
 
 .error {
@@ -38,22 +50,35 @@ h2 {
 }
 
 .show-password {
+    position: relative;
+    left: -3rem;
     font-size: 13px;
     margin-top: 5px;
     display: flex;
     align-items: center;
     gap: 6px;
+    opacity: 0.5;
 }
 
 .btn {
+    position: relative;
+    left: 11rem;
     background-color: #007bff;
+    margin-left: -14rem;
     color: white;
     padding: 12px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    background: rgba(10, 39, 231, 0.5) !important;
 }
 
-.btn:hover {
-    background-color: #0056b3;
+.btn:hover {    
+    background: rgb(39, 54, 152) !important;
+}
+
+.split-screen {
+    display: flex;
+    background-image: url('https://freeyork.org/wp-content/uploads/2014/11/11039410-R3L8T8D-1000-26.jpg');
+    background-size: cover;
 }

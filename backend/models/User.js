@@ -27,7 +27,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         minlength: 6,
-        match: [!/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s])([^\s]){6,}$/, 'Invalid Password']
+        match: [/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s])([^\s]){6,}$/, 'Invalid Password']
     }
 });
 
